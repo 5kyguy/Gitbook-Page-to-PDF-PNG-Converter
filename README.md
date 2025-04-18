@@ -74,5 +74,50 @@ Happy converting!
 
 - [x] Update README
 - [x] Adapt for Othentic Docs
-- [ ] Add utility to convert to Markdown
+- [x] Add utility to convert to Markdown
 - [ ] Add utility to track changes on docs and update Markdown saved earlier
+
+---
+
+# Gitbook to Markdown Converter
+
+This tool scrapes GitBook documentation websites and converts the content to Markdown files with locally saved images.
+
+## Features
+
+- Extracts content from GitBook pages and converts to Markdown format
+- Downloads and locally saves all images referenced in the content
+- Updates image references in Markdown to point to local images
+- Organizes content by categories based on URL structure
+- Preserves code blocks with proper syntax highlighting
+- Uses meaningful filenames based on the URL structure
+- Accepts GitBook URL as a command-line parameter
+- Uses the site title to name the output folder
+
+## Configuration
+
+You can specify the GitBook URL in two ways:
+
+1. Via command-line argument:
+   ```bash
+   node src/index_md.js --url https://your-gitbook.com
+   # or using the short form
+   node src/index_md.js -u https://your-gitbook.com
+   ```
+
+2. By editing the default URL in the script:
+   ```javascript
+   const URL_GITBOOK = "https://docs.othentic.xyz/main";
+   ```
+
+## Usage
+
+Run the script with npm:
+
+```bash
+# Using the npm script
+npm run convert -- --url https://your-gitbook.com
+
+# Or directly
+node src/index_md.js --url https://your-gitbook.com
+```
