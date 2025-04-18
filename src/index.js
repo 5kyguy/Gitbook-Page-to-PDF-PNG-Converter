@@ -4,7 +4,7 @@ const xml2js = require("xml2js");
 const fs = require("fs");
 const path = require("path");
 
-const URL_GITBOOK = "https://docs.walken.io";
+const URL_GITBOOK = "https://docs.othentic.xyz/main";
 
 // Function to fetch the sitemap XML and parse it
 async function fetchSitemap(url) {
@@ -118,7 +118,7 @@ function categorizeUrl(url) {
 
 // Main function to run the script
 async function run() {
-  const sitemapUrl = `${URL_GITBOOK}/sitemap.xml`; // Replace with the actual sitemap URL
+  const sitemapUrl = `${URL_GITBOOK}/sitemap-pages.xml`; // Replace with the actual sitemap URL
   const saveDir = "./pdfs"; // Directory where PDFs will be saved
 
   // Create the output directory if it doesn't exist

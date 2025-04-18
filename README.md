@@ -73,6 +73,6 @@ Happy converting!
 ## Sky's Notes
 
 - [x] Update README
-- [ ] Adapt for Othentic Docs
+- [x] Adapt for Othentic Docs
 - [ ] Add utility to convert to Markdown
 - [ ] Add utility to track changes on docs and update Markdown saved earlier
