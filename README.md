@@ -69,3 +69,10 @@ Contributions are always welcome. If you have improvements or suggestions, open 
 
 Thanks for using this script! 😊
 Happy converting!
+
+## Sky's Notes
+
+- [x] Update README
+- [ ] Adapt for Othentic Docs
+- [ ] Add utility to convert to Markdown
+- [ ] Add utility to track changes on docs and update Markdown saved earlier
